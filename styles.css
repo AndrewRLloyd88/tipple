@@ -1,0 +1,278 @@
+/* color scheme
+https://coolors.co/32292f-99e1d9-f0f7f4-70abaf-705d56
+{"Black Coffee":"32292f"
+"Middle Blue Green":"99e1d9",
+"Mint Cream":"f0f7f4",
+"Cadet Blue":"70abaf",
+"Umber":"705d56"} */
+
+html, body {
+  min-height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Sriracha', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #f0f7f4;
+  background: url("./video/cocktail4.gif");
+  background-position: cover;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+p {margin-bottom: 1.15rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Sriracha', cursive;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052em;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 2.441em;
+  margin: 0;
+}
+
+h3 {font-size: 1.953em;}
+
+h4 {font-size: 1.563em;}
+
+h5 {font-size: 1.25em;}
+
+small, .text_small {font-size: 0.8em;}
+
+
+/* styling header */
+header {
+  margin-top: 0px;
+}
+
+.margin-top_20 {
+  margin-top: 20px;
+}
+
+.brown {
+  background-color: #32292f;
+  min-height: 64px;
+}
+
+.title-letter {
+  color: #99e1d9;
+  font-size: 3.25rem;
+  -webkit-transform: rotate(50deg);
+display: inline-block;
+}
+
+.nav-letter {
+  color: #99e1d9;
+  font-size: 1.5em;
+  -webkit-transform: rotate(50deg);
+display: inline-block;
+}
+
+.menu-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu p {
+  padding: 0 10px;
+  margin: 10px;
+}
+
+.menu button {
+  margin-left: 10px;
+}
+
+/* images section */
+.images img {
+  width: 15rem;
+  height: 15rem;
+  margin: 20px 20px;
+}
+
+/* styling search bar */
+  .search-bar {
+    min-width: 40rem;
+    padding: 20px 20px;
+    font-size: 1.1rem;
+    margin-right: 20px;
+  }
+
+.btn-style {
+  padding: 20px 20px;
+  font-size: 1.1rem;
+  background-color: #705d56;
+  color: #F0F7F4;
+}
+
+.btn-hvr {
+ outline: #99E1D9 solid 2px;
+ border-radius: 4px;
+ background-color: #32292f;
+}
+
+.btn-click {
+  outline: #99E1D9 solid 2px;
+  border-radius: 4px;
+  background-color: #70ABAF;
+}
+
+/* styling for search results */
+
+.drink-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+.drink-wrapper h2 {
+  width: 80%;
+}
+
+.mat-img_container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.materials-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.ing-mes_wrapper {
+  display: flex;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+
+.image-container {
+  order: 3;
+}
+
+.instructions-container {
+  order: 4;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.image-container img {
+  width: 20rem;
+}
+
+}
+.instructions-container {
+  order: 4;
+}
+
+.drinkType {
+  font-size: 1.5rem;
+}
+
+.no-results {
+  padding-bottom: 60px;
+}
+
+
+/* generic classes */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+
+.transparency {
+ background-color: rgba(18, 19, 26, 0.8);
+ min-height: 100%;
+ min-width: 100%;
+ position: absolute;
+ padding: 0;
+ margin: 0;
+}
+
+.transparent-bg {
+   background-color: rgba(18, 19, 26, 0.8);
+   border: 2px solid #f0f7f4;
+}
+
+.hidden {
+  display: none;
+}
+
+.pad-btm {
+  padding-bottom: 20px;
+}
+
+.nostyle {
+  list-style: none;
+  padding: 5px;
+  font-size: 1.953em;
+}
+
+.no-list {
+  list-style: none;
+}
+
+/* animates the cockail emojis on hover */
+.spinAnim {
+  animation-name: dream;
+animation-duration: 0.5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+animation-fill-mode: forwards;
+}
+
+@keyframes dream {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
+
+/* have to be at the bottom for dynamic search styling to work */
+.alcoholic {
+ border: 2px solid #d6133e;
+}
+
+.non-alcoholic {
+  border: 2px solid #00ff84;
+}
+
+.optional-alcohol {
+  border: 2px solid #1392d6;
+}
+
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
